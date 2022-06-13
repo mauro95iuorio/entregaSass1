@@ -1,0 +1,247 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #D0C9C0;
+}
+
+/*arranca header y nav*/
+header{
+    background-color: #5F7161;
+    display: flex;
+    border-style: groove;
+    text-decoration: none;
+    
+} 
+.header-container{
+    display: grid;
+    grid-template-columns: (3 1fr);
+    grid-template-areas: 
+    "tituloHeader navIndex navIndex "
+    ;
+}
+.tituloHeader{
+    grid-area: tituloHeader;
+    margin-right: 100px;
+}
+.navIndex{
+    grid-area: navIndex;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 a{
+    color: black;
+    text-decoration: none;
+}
+.tituloHeader{
+     margin-left: 50px;
+}
+  
+.navLi{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 10px;
+    
+}
+
+/*Termina header y nav*/
+
+
+/*arranca main */
+.mainIndex{
+    display: grid;
+    grid-template-columns: (2 1fr);
+    grid-template-areas: 
+    "formindex imgZoom"
+    ;
+}
+.contenedor-contactanos{
+    display: grid;
+    grid-template-columns: (2 1fr);
+    grid-template-areas: 
+    "formContactanos ubicacion";
+}
+
+.formindex{
+    background-color: #6D8B74;
+    border-style: groove;
+    grid-area: formindex;
+    margin-right: 500px;
+    margin-left: 200px;
+}
+.formindextitulo{
+    background-color: #D0C9C0;
+    color: black;
+    font-size: larger;
+    margin-right: 300px;
+    margin-bottom: 44px;
+} 
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+.imgZoom:hover  {
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition: 0.5s;
+}
+.imgZoom{
+    overflow:hidden;
+    grid-area: imgZoom;
+
+}
+.imgBlur {
+    filter: blur(2.5px);
+}
+.imgBlur:hover{
+    transition: 0.7s;
+    filter: none;
+}
+.imgNosotros{
+    display: flex;
+    justify-content: space-around;
+}
+.imgConocenos {
+    filter: blur(2.5px);
+}
+.imgConocenos:hover{
+    transition: 0.7s;
+    filter: none;
+}
+.videoConoc{
+    display: flex;
+    justify-content: center;
+}
+.videoConocenos{
+    
+    width: 800px;
+    height: 400px;
+}
+
+.formContactanos{
+    background-color: #6D8B74;
+    color: black;
+    border-style: groove;
+    margin-right: 0px;
+    grid-area: formContactanos;
+
+}
+.ubicacion{
+    grid-area: ubicacion;
+}
+textarea{
+    resize: none;
+}
+
+
+/*Termina Main */
+
+
+/*arranca section main*/
+.subtitulos {
+    background-color: #6D8B74;
+    border-style: groove;
+    color: black;
+    font-weight: bold;
+}
+.fotosMain{
+    display: flex;
+    justify-content: space-around;
+}
+/*Termina Section Main*/
+
+/*arranca Footer*/
+footer{
+    display: flex;
+    justify-content:space-around;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: (4 1fr);
+    grid-template-areas: 
+    "f-con f-pagos f-redes f-at"
+    ;
+}
+.f-con{
+    grid-area: f-con;
+}
+.f-pagos{
+    grid-area: f-pagos;
+}
+.f-redes{
+    grid-area: f-redes;
+}
+.f-at{
+    grid-area: f-at;
+}
+.tituloFooter{
+    background-color: #5F7161;
+    border-style: groove;
+}
+footer ul li{
+    text-decoration: none;
+}
+/*Termina Footer*/
+
+
+/*Medidas Queries*/
+@media (max-width: 896px){
+    .header-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .ulQueri{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .navIndex{
+        background-color: rgb(144, 150, 136);
+    }
+    .navLi{
+        margin-left: 0;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .mainIndex{
+      display: flex;
+      flex-direction: column;
+
+    }
+    .formindex{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .imgZoom{
+        display: none;
+    }
+    .imgBlur{
+        filter: blur(0px);
+    }
+    .contenedor-contactanos{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgNosotros{
+        display: flex;
+        justify-content: center;
+    }
+    .videoConocenos{
+        display: flex;
+        justify-content: center;
+    }
+    .imgConocenos{
+        filter: blur(0px);
+    }
+}

@@ -1,0 +1,127 @@
+header {
+  background-color: #5F7161;
+  border-style: groove;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 3 1fr;
+  grid-template-areas: "tituloHeader navIndex navIndex ";
+}
+header .tituloContainer .tituloHeader {
+  grid-area: tituloHeader;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+header .tituloContainer .tituloHeader a {
+  color: black;
+  text-decoration: none;
+}
+header .navIndex {
+  grid-area: navIndex;
+}
+header .navIndex nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+header .navIndex nav ul .navLi {
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 10px;
+  list-style-type: none;
+}
+header .navIndex nav ul .navLi a, header .navIndex nav ul .navLi a:visited, header .navIndex nav ul .navLi a:hover, header .navIndex nav ul .navLi a:active {
+  color: inherit;
+}
+
+.mainIndex {
+  display: grid;
+  grid-template-columns: 2 1fr;
+  grid-template-areas: "formindex imgZoom";
+}
+.mainIndex .formindex {
+  background-color: #6D8B74;
+  border-style: groove;
+  grid-area: formindex;
+  margin-right: 500px;
+  margin-left: 200px;
+}
+.mainIndex .formindex .formindextitulo {
+  background-color: #D0C9C0;
+  color: black;
+  font-size: larger;
+  margin-right: 300px;
+  margin-bottom: 44px;
+}
+
+.imgZoom:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.imgZoom {
+  overflow: hidden;
+  grid-area: imgZoom;
+}
+
+.subtitulos {
+  background-color: #6D8B74;
+  border-style: groove;
+  color: black;
+  font-weight: bold;
+}
+
+.fotosMain {
+  display: flex;
+  justify-content: space-around;
+}
+.fotosMain .imgZoom:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.fotosMain .imgZoom {
+  overflow: hidden;
+  grid-area: imgZoom;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 4 1fr;
+  grid-template-areas: "f-con f-pagos f-redes f-at";
+}
+.footer-container a {
+  color: black;
+}
+.footer-container .f-con {
+  grid-area: f-con;
+  list-style: none;
+}
+.footer-container .f-pagos {
+  grid-area: f-pagos;
+  list-style: none;
+}
+.footer-container .f-redes {
+  grid-area: f-redes;
+  list-style: none;
+}
+.footer-container .f-at {
+  grid-area: f-at;
+  list-style: none;
+}
+.footer-container .tituloFooter {
+  background-color: #5F7161;
+  border-style: groove;
+}
+
+* {
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D0C9C0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+.footer-container{
+    
+    a{
+        color: black;
+    }
+    display: grid;
+    grid-template-columns: (4 1fr);
+    grid-template-areas: 
+    "f-con f-pagos f-redes f-at"
+    ;
+    .f-con{
+        grid-area: f-con;
+        list-style: none;
+    }
+    .f-pagos{
+        grid-area: f-pagos;
+        list-style: none;
+    }
+    .f-redes{
+        grid-area: f-redes;
+        list-style: none;
+    }
+    .f-at{
+        grid-area: f-at;
+        list-style: none;
+    }
+    .tituloFooter{
+        background-color: #5F7161;
+        border-style: groove;
+    }
+}

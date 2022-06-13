@@ -1,0 +1,21 @@
+.subtitulos {
+    background-color: #6D8B74;
+    border-style: groove;
+    color: black;
+    font-weight: bold;
+}
+.fotosMain{
+    display: flex;
+    justify-content: space-around;
+    
+    .imgZoom:hover  {
+        -webkit-transform:scale(1.1);
+        transform:scale(1.1);
+        transition: 0.3s;
+    }
+    .imgZoom{
+        overflow:hidden;
+        grid-area: imgZoom;
+    
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "pre-entrega-proy-final2---copia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauro95iuorio/PreEntregaN2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauro95iuorio/PreEntregaN2/issues"
+  },
+  "homepage": "https://github.com/mauro95iuorio/PreEntregaN2#readme"
+}
